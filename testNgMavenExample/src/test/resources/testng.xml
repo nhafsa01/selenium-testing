@@ -1,0 +1,24 @@
+  <?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+    <suite name = "TestGroups">
+    <test name = "testGroup1">
+        <groups>
+            <run>
+                <include name = "grp1" />
+            </run>
+        </groups>
+
+        <classes>
+            <class name = "com.ayantsoft.testng.maven.GroupExample" />
+        </classes>
+    </test>
+
+    <test name="TestNgMavenTest">
+        <classes>
+        <class name="com.ayantsoft.testng.maven.TestNgMavenExample"/>
+        <class name="com.ayantsoft.testng.maven.TestNgMavenSecondClass"/>
+        </classes>
+    </test>
+
+    </suite>
